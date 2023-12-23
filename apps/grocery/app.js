@@ -28,6 +28,7 @@ const mainMenu = settings.products.map((p,i) => ({
   value: p.ok,
   format: v => v?'[x]':'[ ]',
   index: i,
+	fontHeight: 4,
   onchange: v => {
     settings.products[i].ok = v;
     updateSettings();
